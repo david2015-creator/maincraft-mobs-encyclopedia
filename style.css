@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle, red, orange, yellow, green, blue, indigo, violet);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.mob-list, .video-list, .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.mob, .video-card, .product {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 calc(33% - 40px);
+    max-width: calc(33% - 40px);
+}
+
+.mob img, .product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.video-card iframe {
+    width: 100%;
+    border-radius: 20px;
+}
+
+h2, h3, p {
+    margin: 10px 0;
+}
+
+.price {
+    color: green;
+    font-weight: bold;
+}
+
+.mob h3, .video-card h3, .product h3 {
+    font-size: 1.2em;
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mob p, .video-card p, .product p {
+    font-size: 1em;
+    background: linear-gradient(45deg, red, orange, #996600, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
